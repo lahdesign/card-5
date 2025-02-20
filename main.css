@@ -12,12 +12,12 @@ img {
     img {
         width: 50%;
     }
- div{
+ /* div{
     display: flex;
     justify-content: left;
     align-items: left;
     height: 100vh;
- }
+ } */
 
  .crayoncorner-left{
     position:fixed;
@@ -53,14 +53,108 @@ p{
 font-weight: 400;
 font-size: 2.0em;
 font-style: normal;
-text-align: center;}
+text-align: center;
+}
 
-.icon-container {
+.icon-container{
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr;
-   gap: 10px;
+}
+.email-icon {
+   width: 89px;
+   height: 89px;
+   display: grid;
+   /* grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr; */
+   /* gap: 10px; */
  }
+
+ .resume-icon { 
+   width: 89px;
+   height: 89px;
+   /* display: grid; */
+   /* grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr; */
+   /* gap: 10px; */
+ }
+
+ .teachingphilosophy-icon {
+   width: 89px;
+   height: 89px;
+   /* display: grid; */
+   /* grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr; */
+   /* gap: 10px; */
+ }
+
+ .portfolio-icon {
+   width: 89px;
+   height: 89px;
+   display: grid;
+   /* grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr; */
+   /* gap: 10px; */
+ }
+
+
+
+
+
+
+
+
+
+
+body,html {
+   width: 100%;
+   height: 100%
+}
+
+body{
+   margin: 0;
+   padding 0;
+   background: #FFFEF6;
+}
+
+.bubblecontainer{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.bubble{
+   position: absolute;
+   bottom: -100px;
+   box-shadow: 0 20px 30px rgba(0,0,0,0,2)
+               inset 0px 10px 30px 5px rgba(255,255,255,1);
+   border-radius: 50%;
+   opacity: 0.5;
+   animation: moving 0.5s infinite ease-in;
+}
+
+@keyframes moving{
+   0%{
+      botton: -100px;}
+      100%{
+         botton: 1080px;
+      }
+   }
+   .bubble:nth-child(1){
+      width: 40px;
+      height: 40px;
+      left: 5%;
+      animation-duration: 8s;
+   }
+
+
+
+
+
 
 
 
